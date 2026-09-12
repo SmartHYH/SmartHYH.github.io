@@ -3,13 +3,79 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="个人设计作品集" />
-    <title>设计作品集</title>
+    <meta name="theme-color" content="#090e0d" />
+    <meta name="description" content="M7 与 K416 步枪改装概念展示：六套方案、原创装备图和动态预览。" />
+    <title>DELTA / LAB — 三角洲行动步枪改装概念档案</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="DELTA LAB 首页"><span class="brand-symbol" aria-hidden="true">△</span><span>DELTA<span class="brand-slash">/</span>LAB<small>LOADOUT ARCHIVE</small></span></a>
+      <nav class="main-nav" aria-label="主导航"><a href="#armory">武器库</a><a href="#m7">M7</a><a href="#k416">K416</a><a href="#motion">动态展示</a></nav>
+      <a class="header-action" href="#armory">探索档案 <span aria-hidden="true">↗</span></a>
+    </header>
+
     <main>
-      <h1>设计作品集</h1>
-      <p>作品正在整理中。</p>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> DELTA / LAB <span class="eyebrow-line"></span> 三角洲行动 · 非官方改装档案</div>
+          <p class="hero-kicker">FIELD CONFIGURATION / 2026</p>
+          <h1 id="hero-title">火力，<br /><em>由你定义。</em></h1>
+          <p class="hero-description">同一把步枪，可以拥有截然不同的战场性格。探索 M7 与 K416 的六套视觉改装方案，从轮廓、材质到场景，找到属于你的那一款。</p>
+          <div class="hero-actions"><a class="primary-button" href="#armory">进入武器库 <span aria-hidden="true">↗</span></a><a class="text-button" href="#motion">观看动态预览 <span aria-hidden="true">→</span></a></div>
+          <div class="hero-index"><span>01 / 04</span><span class="index-line"></span><span>SCROLL TO EXPLORE</span></div>
+        </div>
+        <div class="hero-visual" aria-label="M7 RIDGELINE 步枪概念图">
+          <div class="visual-rings" aria-hidden="true"></div><span class="cross cross-a" aria-hidden="true">+</span><span class="cross cross-b" aria-hidden="true">+</span>
+          <div class="hero-visual-top"><span>ACTIVE BUILD / 01</span><span>DESIGN CONCEPT</span></div>
+          <img class="hero-rifle" src="assets/m7-ridgeline.png" alt="橄榄绿 M7 RIDGELINE 中距风格步枪概念图" fetchpriority="high" />
+          <div class="hero-visual-bottom"><strong>M7 <span>RIDGELINE</span></strong><span>中距巡逻 / FIELD READY</span></div>
+          <span class="vertical-label" aria-hidden="true">TACTICAL VISUAL ARCHIVE — 001</span>
+        </div>
+        <div class="hero-footer"><span><i></i> ORIGINAL VISUALS / 原创概念视觉</span><span>02 枪型 <b>/</b> 06 方案 <b>/</b> 01 档案</span><a href="#armory" aria-label="向下浏览武器库">↓</a></div>
+      </section>
+
+      <section class="armory-intro section-wrap" id="armory" aria-labelledby="armory-title">
+        <div class="section-overline"><span>01 / ARMORY INDEX</span><span class="rule"></span><span>CHOOSE YOUR PLATFORM</span></div>
+        <div class="intro-heading"><div><p class="section-kicker">SELECT A PLATFORM</p><h2 id="armory-title">两种平台，<br /><span>六种表达。</span></h2></div><p>这里没有唯一的“标准答案”。点击配装卡片，切换主视觉与配件标签，观察不同配置如何改变一把枪的气质。</p></div>
+        <div class="platform-links"><a href="#m7"><span class="platform-number">01 / BATTLE RIFLE</span><strong>M7</strong><span class="platform-arrow" aria-hidden="true">↗</span><small>沉稳、厚重、宽阔视野</small></a><a href="#k416"><span class="platform-number">02 / ASSAULT RIFLE</span><strong>K416</strong><span class="platform-arrow" aria-hidden="true">↗</span><small>灵活、紧凑、快速响应</small></a></div>
+      </section>
+
+      <section class="weapon-section section-wrap" id="m7" aria-labelledby="m7-title">
+        <div class="section-overline"><span>02 / WEAPON PLATFORM</span><span class="rule"></span><span>HEAVY / CONTROLLED</span></div>
+        <div class="weapon-heading"><div><p class="section-kicker">PLATFORM 01 / BATTLE RIFLE</p><h2 id="m7-title">M7<span class="heading-star">✳</span></h2></div><p>厚重轮廓之下，是三种不同的节奏。<br />从近距机动到开阔地带的沉着观察。</p></div>
+        <div class="feature-panel olive" data-feature="m7">
+          <div class="feature-top"><span><i class="small-square"></i> EQUIPMENT VIEW / M7</span><span>CONFIGURATION 01—03</span></div>
+          <div class="feature-image-stage"><div class="feature-halo"></div><div class="feature-grid"></div><span class="measure-line">──────────────  01  ──────────────</span><img id="m7-feature-image" src="assets/m7-ridgeline.png" alt="M7 RIDGELINE 改装概念图" /><span class="feature-watermark" aria-hidden="true">M7</span><span class="stage-coordinate">X: 042.1 / Y: 019.8</span></div>
+          <div class="feature-details"><div class="feature-name"><span class="feature-label" id="m7-feature-label">SELECTED LOADOUT / 01</span><h3 id="m7-feature-name">RIDGELINE</h3><span class="feature-subtitle" id="m7-feature-type">中距巡逻 / FIELD READY</span></div><p id="m7-feature-description">以稳定视野与沉着轮廓为核心，让橄榄绿与深灰材质融入开阔地形。</p><div class="feature-tags" id="m7-feature-tags"><span>低倍率瞄具</span><span>前握把</span><span>消音器</span></div></div>
+        </div>
+        <div class="variant-heading"><h3>选择改装方案 <span>/ 03</span></h3><p>点击卡片切换主视觉 <span aria-hidden="true">↗</span></p></div>
+        <div class="variant-grid" id="m7-variants" role="group" aria-label="M7 改装方案"></div>
+      </section>
+
+      <section class="weapon-section section-wrap k416-section" id="k416" aria-labelledby="k416-title">
+        <div class="section-overline"><span>03 / WEAPON PLATFORM</span><span class="rule"></span><span>LIGHT / RESPONSIVE</span></div>
+        <div class="weapon-heading"><div><p class="section-kicker">PLATFORM 02 / ASSAULT RIFLE</p><h2 id="k416-title">K416<span class="heading-star">✳</span></h2></div><p>更紧凑的体态，更直接的视觉语言。<br />为城市、机动与隐蔽场景各留一个答案。</p></div>
+        <div class="feature-panel ice" data-feature="k416">
+          <div class="feature-top"><span><i class="small-square"></i> EQUIPMENT VIEW / K416</span><span>CONFIGURATION 01—03</span></div>
+          <div class="feature-image-stage"><div class="feature-halo"></div><div class="feature-grid"></div><span class="measure-line">──────────────  02  ──────────────</span><img id="k416-feature-image" src="assets/k416-circuit.png" alt="K416 CIRCUIT 改装概念图" loading="lazy" /><span class="feature-watermark" aria-hidden="true">K416</span><span class="stage-coordinate">X: 084.6 / Y: 026.2</span></div>
+          <div class="feature-details"><div class="feature-name"><span class="feature-label" id="k416-feature-label">SELECTED LOADOUT / 01</span><h3 id="k416-feature-name">CIRCUIT</h3><span class="feature-subtitle" id="k416-feature-type">城市潜行 / URBAN FLOW</span></div><p id="k416-feature-description">蓝灰与黑色构成冷静的城市表情，短小的轮廓让视觉重心更加集中。</p><div class="feature-tags" id="k416-feature-tags"><span>反射式瞄具</span><span>短护木</span><span>消音器</span></div></div>
+        </div>
+        <div class="variant-heading"><h3>选择改装方案 <span>/ 03</span></h3><p>点击卡片切换主视觉 <span aria-hidden="true">↗</span></p></div>
+        <div class="variant-grid" id="k416-variants" role="group" aria-label="K416 改装方案"></div>
+      </section>
+
+      <section class="motion-section section-wrap" id="motion" aria-labelledby="motion-title">
+        <div class="section-overline"><span>04 / MOTION STUDY</span><span class="rule"></span><span>LIVE PREVIEW</span></div>
+        <div class="motion-heading"><div><p class="section-kicker">ANIMATED VISUALS</p><h2 id="motion-title">静态装备，<br /><span>动态呈现。</span></h2></div><div><p>扫描光束与配装切换由页面动画实时渲染。每一帧都来自上方的原创枪械概念图。</p><button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="false"><span class="toggle-icon" aria-hidden="true">Ⅱ</span><span class="toggle-text">暂停动态</span></button></div></div>
+        <div class="motion-grid">
+          <article class="motion-card motion-m7"><div class="motion-top"><span><i class="live-dot"></i> LIVE FEED 01</span><span>M7 / TRANSITION</span></div><div class="motion-screen"><div class="motion-orbit" aria-hidden="true"></div><img class="motion-frame frame-one" src="assets/m7-blackout.png" alt="M7 BLACKOUT 近距方案动态切换画面" loading="lazy" /><img class="motion-frame frame-two" src="assets/m7-ridgeline.png" alt="M7 RIDGELINE 中距方案动态切换画面" loading="lazy" /><span class="scan-beam" aria-hidden="true"></span><span class="motion-reticle" aria-hidden="true">+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +<br /><br />+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</span></div><div class="motion-bottom"><strong>轮廓切换</strong><span>BLACKOUT → RIDGELINE</span><span class="moving-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></article>
+          <article class="motion-card motion-k416"><div class="motion-top"><span><i class="live-dot"></i> LIVE FEED 02</span><span>K416 / TRANSITION</span></div><div class="motion-screen"><div class="motion-orbit" aria-hidden="true"></div><img class="motion-frame frame-one" src="assets/k416-raider.png" alt="K416 RAIDER 机动方案动态切换画面" loading="lazy" /><img class="motion-frame frame-two" src="assets/k416-ghost.png" alt="K416 GHOST 低可见度方案动态切换画面" loading="lazy" /><span class="scan-beam" aria-hidden="true"></span><span class="motion-reticle" aria-hidden="true">+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +<br /><br />+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +</span></div><div class="motion-bottom"><strong>材质切换</strong><span>RAIDER → GHOST</span><span class="moving-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></article>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer"><div><a class="brand footer-brand" href="#top"><span class="brand-symbol" aria-hidden="true">△</span><span>DELTA<span class="brand-slash">/</span>LAB<small>LOADOUT ARCHIVE</small></span></a><p>每一种轮廓，都是一种选择。</p></div><div class="footer-links"><a href="#top">返回顶部 ↑</a><a href="https://www.playdeltaforce.com/events/hq/" target="_blank" rel="noopener noreferrer">游戏官方装备站 ↗</a></div><p class="footer-note">玩家非官方概念展示。图片由 AI 生成，配装名称和场景文案为视觉创作，不代表游戏内实际属性或推荐方案。</p></footer>
   </body>
 </html>

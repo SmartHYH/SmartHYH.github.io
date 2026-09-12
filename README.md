@@ -1,7 +1,7 @@
-# 设计作品集准备目录
+# DELTA / LAB
 
-这是静态网页项目，可发布到 GitHub Pages。页面入口是 `index.html`，作品图片可放在 `assets/`。
+M7 与 K416 的玩家非官方步枪改装概念展示页，包含六套原创 AI 视觉和两组由 CSS 实时渲染的动态预览。方案名称和描述是视觉创作，不代表游戏数值。
 
-当前页面只是占位内容，发布前需要替换为真实作品、个人介绍和联系方式。
+项目使用原生 HTML、CSS 和 JavaScript，无需构建工具。入口是 `index.html`，图片位于 `assets/`。修改后可将文件上传到 [SmartHYH.github.io](https://github.com/SmartHYH/SmartHYH.github.io) 仓库的 `main` 分支，GitHub Pages 会从根目录发布到 [smarthyh.github.io](https://smarthyh.github.io/)。
 
-发布时：创建公开的 GitHub 仓库，将本目录的文件推送到仓库，然后在仓库的 Settings → Pages 中启用发布。若要使用 `用户名.github.io` 作为网址，仓库名也应是 `用户名.github.io`。
+在浏览器打开 `index.html` 即可查看静态预览。卡片切换和动画由 `app.js` 与 `styles.css` 控制。
